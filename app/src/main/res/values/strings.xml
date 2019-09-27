@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Randomizer</string>
     <string name="description">description</string>
+    <string name="toss">toss</string>
+    <string name="spin_the_bottle">Spin the bottle</string>
+    <string name="lucky_spinner">lucky spinner</string>
+    <string name="dice_roll">dice roll</string>
 </resources>
