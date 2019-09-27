@@ -1,5 +1,6 @@
 package kushal.application.randomizer
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -15,6 +16,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         ll1.setOnClickListener {
+
+            startActivity(Intent(this, TossActivity::class.java))
 
         }
 
