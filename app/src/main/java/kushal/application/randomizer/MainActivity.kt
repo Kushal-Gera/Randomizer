@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         ll1.setOnClickListener { startActivity(Intent(this, TossActivity::class.java)) }
 
-//        ll2.setOnClickListener { startActivity(Intent(this, TossActivity::class.java)) }
+        ll2.setOnClickListener { startActivity(Intent(this, BottleAct::class.java)) }
 
         ll3.setOnClickListener { startActivity(Intent(this, DiceActvity::class.java)) }
 

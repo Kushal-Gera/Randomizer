@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.view.View
+import android.view.animation.RotateAnimation
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_dice_actvity.*
 import kotlin.random.Random
@@ -16,24 +17,23 @@ class DiceActvity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dice_actvity)
 
-        progress_circular_dice.visibility = View.GONE
+        val listener = View.OnClickListener{
+            val rotateAnimation = RotateAnimation(0F, 180F,
+                RotateAnimation.RELATIVE_TO_SELF, 0.5f,
+                RotateAnimation.RELATIVE_TO_SELF , 0.5f)
+            rotateAnimation.duration = 600
 
-        btn_dice.setOnClickListener {
-
-            dice_img.visibility = View.INVISIBLE
-            progress_circular_dice.visibility = View.VISIBLE
-
+            dice_img.startAnimation(rotateAnimation)
             Handler().postDelayed( {
-                val r = Random.nextInt(6)
+                val r = (0..5).random()
                 dice_img.setImageResource(img_list[r])
                 //toast stuff
                 Toast.makeText(this,"It's a ${r+1}", Toast.LENGTH_SHORT).show()
-                progress_circular_dice.visibility = View.GONE
-                dice_img.visibility = View.VISIBLE
-            }, 500)
-
+            }, 300)
         }
 
+        btn_dice.setOnClickListener(listener)
+        title_dice.setOnClickListener(listener)
 
     }
 }
