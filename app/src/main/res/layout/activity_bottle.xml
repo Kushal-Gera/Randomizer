@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BottleAct">
@@ -17,9 +18,37 @@
             android:gravity="center"
             android:text="@string/spin_the_bottle"
             android:textAllCaps="true"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="#006595"
             android:textSize="28sp"
             android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="8"
+                android:text="@string/number_player"
+                android:textColor="#555"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="2" />
+
+        </LinearLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -34,7 +63,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="20dp"
                 android:contentDescription="@string/description"
                 android:src="@drawable/circle" />
 
@@ -46,7 +75,7 @@
                 android:layout_alignTop="@+id/circle_bg"
                 android:layout_alignEnd="@+id/circle_bg"
                 android:layout_alignBottom="@+id/circle_bg"
-                android:layout_margin="80dp"
+                android:layout_margin="50dp"
                 android:contentDescription="@string/description"
                 android:src="@drawable/bottle_plain" />
 

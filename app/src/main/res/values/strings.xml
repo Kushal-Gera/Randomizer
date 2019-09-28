@@ -7,4 +7,17 @@
     <string name="dice_roll">dice roll</string>
     <string name="let_s_toss">Let\'s Toss</string>
     <string name="roll">Roll</string>
+    <string name="number_player">Enter Number of Players Playing</string>
+
+    <string-array name="players">
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+        <item>Four</item>
+        <item>Five</item>
+        <item>Six</item>
+        <item>Seven</item>
+        <item>Eight</item>
+    </string-array>
+
 </resources>
