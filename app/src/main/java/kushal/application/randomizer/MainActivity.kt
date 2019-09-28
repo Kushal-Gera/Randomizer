@@ -15,11 +15,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        ll1.setOnClickListener {
+        ll1.setOnClickListener { startActivity(Intent(this, TossActivity::class.java)) }
 
-            startActivity(Intent(this, TossActivity::class.java))
+//        ll2.setOnClickListener { startActivity(Intent(this, TossActivity::class.java)) }
 
-        }
+        ll3.setOnClickListener { startActivity(Intent(this, DiceActvity::class.java)) }
+
+//        ll4.setOnClickListener { startActivity(Intent(this, TossActivity::class.java)) }
 
 
 
