@@ -75,7 +75,7 @@
                 android:layout_alignTop="@+id/circle_bg"
                 android:layout_alignEnd="@+id/circle_bg"
                 android:layout_alignBottom="@+id/circle_bg"
-                android:layout_margin="50dp"
+                android:layout_margin="60dp"
                 android:contentDescription="@string/description"
                 android:src="@drawable/bottle_plain" />
 

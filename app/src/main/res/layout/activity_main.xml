@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:background="@drawable/back"
     android:orientation="horizontal"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:baselineAligned="false">
 
     <LinearLayout
         android:orientation="vertical"
@@ -145,7 +146,7 @@
                 android:textAllCaps="true"
                 android:textColor="#1E2C30"
                 android:textSize="22sp"
-                android:text="@string/lucky_spinner" />
+                android:text="None" />
         </LinearLayout>
 
     </LinearLayout>

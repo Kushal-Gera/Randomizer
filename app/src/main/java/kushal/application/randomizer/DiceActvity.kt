@@ -18,17 +18,18 @@ class DiceActvity : AppCompatActivity() {
         setContentView(R.layout.activity_dice_actvity)
 
         val listener = View.OnClickListener{
-            val rotateAnimation = RotateAnimation(0F, 180F,
+            val rotateAnimation = RotateAnimation(0F, 360F,
                 RotateAnimation.RELATIVE_TO_SELF, 0.5f,
                 RotateAnimation.RELATIVE_TO_SELF , 0.5f)
-            rotateAnimation.duration = 600
+            rotateAnimation.duration = 1100
 
             dice_img.startAnimation(rotateAnimation)
+            dice_img.animate().scaleX(-3f).scaleY(-3f).duration = 1000
             Handler().postDelayed( {
                 val r = (0..5).random()
                 dice_img.setImageResource(img_list[r])
-                //toast stuff
-                Toast.makeText(this,"It's a ${r+1}", Toast.LENGTH_SHORT).show()
+                dice_img.animate().scaleX(1f).scaleY(1f)
+
             }, 300)
         }
 

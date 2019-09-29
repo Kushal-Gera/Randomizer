@@ -25,11 +25,6 @@ class TossActivity : AppCompatActivity() {
 
                 val r = Random.nextInt(50)
                 toss_img.setImageResource(img_list[r%2])
-                //toast stuff
-                if (r%2==0)
-                    Toast.makeText(this,"It's a " +"head",Toast.LENGTH_SHORT).show()
-                else
-                    Toast.makeText(this,"It's a " +"tail",Toast.LENGTH_SHORT).show()
                 progress_circular.visibility = View.GONE
                 toss_img.visibility = View.VISIBLE
             }, 500)
