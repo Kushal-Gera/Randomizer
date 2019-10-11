@@ -21,6 +21,9 @@ class MainActivity : AppCompatActivity() {
 
         ll3.setOnClickListener { startActivity(Intent(this, DiceActvity::class.java)) }
 
+//        ll4.setOnClickListener { startActivity(Intent(this, DiceActvity::class.java)) }
+
+        ll5.setOnClickListener { startActivity(Intent(this, RandomNumber::class.java)) }
 
     }
 

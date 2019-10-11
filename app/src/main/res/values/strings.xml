@@ -8,6 +8,8 @@
     <string name="let_s_toss">Let\'s Toss</string>
     <string name="roll">Roll</string>
     <string name="number_player">Enter Number of Players Playing</string>
+    <string name="generate">generate</string>
+    <string name="optional">optional</string>
 
     <string-array name="players">
         <item>One</item>
